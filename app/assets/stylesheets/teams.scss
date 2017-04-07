@@ -1,0 +1,126 @@
+.team-display{
+  display: flex;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+  width: 100%;
+}
+
+.teams{
+  width: 33.3%
+}
+
+.team-display-title{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.team-display-list {
+  display: flex;
+  padding: 0 10px 0 0;
+  width: 100%;
+  height: 600px;
+  overflow: scroll;
+  flex-direction: column;
+}
+
+.team-logo {
+  max-width: 125px;
+  max-height: 125px;
+}
+
+
+.team-item {
+  display: block;
+  text-align: center;
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.team-item:active {
+  background-color: blue;
+}
+
+.team-item:hover {
+    color: white;
+    background-color: gray;
+}
+
+.team-show-container{
+  width: 66.6%;
+}
+
+.trade-container{
+  width: 100%;
+}
+
+.trade-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.trade-team{
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.player{
+  display: flex;
+  flex-direction: column;
+}
+
+.player-name, .player-position{
+  padding: 5px;
+  font-size: 18px;
+}
+
+.player-name{
+  border-top: solid black 1px;
+  padding-top: 10px;
+}
+
+.trade-buttons{
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 65px;
+}
+
+.confirm-button, .propose-trade{
+  display: block;
+  height: 100%;
+  font-size: 16px;
+  border-width: thin;
+  width: 25%;
+  text-align: center;
+  line-height: 65px;
+  vertical-align: middle;
+}
+
+.confirm-button:hover, .propose-trade:hover{
+  background-color: gray;
+  border-bottom: solid black;
+  cursor: pointer;
+}
+
+.errors{
+  display: block;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.propose-trade{
+  text-decoration: none;
+  color: white;
+}
