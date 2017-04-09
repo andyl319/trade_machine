@@ -1,0 +1,58 @@
+.trade-show-container{
+  display: flex;
+  width: 100%;
+  float: left;
+  border-bottom: solid black;
+  border-width: thin;
+}
+
+.trade-date{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+  height: 40px;
+  font-size: 16px;
+  color: white;
+  line-height: 40px;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+
+.trade-show-team1-container, .trade-show-team2-container{
+  display: block;
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+.trade-show-team1, .trade-show-team2{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  letter-spacing: 1px;
+
+}
+
+.trade-show-team1-container{
+  border-right: solid black;
+  border-width: thin;
+
+}
+.trade-show-team2-container{
+  border-left: solid black;
+  border-width: thin;
+
+}
+
+.trade-show-player{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 16px;
+}

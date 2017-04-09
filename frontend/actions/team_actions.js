@@ -21,10 +21,8 @@ export const receiveTeam = (team) => ({
   team
 });
 
-export const requestTeam = (id) => dispatch => {
+export const requestTeam = id => dispatch => (
   APIUtil.fetchTeam(id)
-    .then(team => {
-      dispatch(receiveTeam(team));
-      return team;
-    });
-};
+    .then(team => dispatch(receiveTeam(team))
+  )
+);

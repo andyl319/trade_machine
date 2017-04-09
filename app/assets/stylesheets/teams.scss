@@ -61,17 +61,29 @@
 
 .trade-header{
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-around;
 }
 
-.trade-team{
+.trade-team1, .trade-team2{
   display: block;
+  position: absolute;
   text-align: center;
   font-size: 26px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 100%;
+  width: 50%;
+}
+
+.trade-team1{
+  left: 1%;
+  top: 1px;
+}
+
+.trade-team2{
+  left: 50%;
+  top: 1px;
 }
 
 .player{
@@ -94,33 +106,77 @@
   background-color: black;
   color: white;
   height: 65px;
+  justify-content: space-around;
+
 }
 
 .confirm-button, .propose-trade{
   display: block;
-  height: 100%;
+  position: relative;
+  height: 40px;
   font-size: 16px;
+  color: red;
+  border: solid red;
+  border-radius: 5px;
   border-width: thin;
-  width: 25%;
+  width: 20%;
   text-align: center;
-  line-height: 65px;
+  line-height: 40px;
   vertical-align: middle;
+  top: 10px;
+
 }
 
 .confirm-button:hover, .propose-trade:hover{
-  background-color: gray;
-  border-bottom: solid black;
+  border-color: green;
+  color: green;
   cursor: pointer;
+}
+
+.confirm-button-lock, .propose-trade-lock{
+  display: block;
+  position: relative;
+  height: 40px;
+  font-size: 16px;
+  color: green;
+  border: solid green;
+  border-radius: 5px;
+  border-width: thin;
+  width: 20%;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  top: 10px;
+  text-decoration: none;
 }
 
 .errors{
   display: block;
   color: red;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .propose-trade{
   text-decoration: none;
-  color: white;
+  color: red;
+}
+
+.propose-trade-lock{
+  color: yellow;
+  border-color: yellow;
+}
+
+.propose-trade-lock:hover{
+  color: green;
+  border-color: green;
+}
+
+.propose-trade:hover{
+  border-color: green;
+  color: green;
+  cursor: pointer;
 }

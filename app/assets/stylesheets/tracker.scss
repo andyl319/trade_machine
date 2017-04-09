@@ -1,0 +1,87 @@
+.tracker-page-container{
+  display: block;
+  width: 100%;
+}
+
+.tracker-items-container{
+  display: block;
+  position: relative;
+  top: 20px;
+  width: 90%;
+  background-color: white;
+  left: calc(50% - 45%);
+
+}
+
+.tracker-container{
+  display: inline-block;
+  width: 100%;
+  background-color: black;
+  border-bottom: solid white;
+  border-width: thin;
+  color: white;
+  text-decoration: none;
+}
+
+.tracker-container:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.tracker1, .tracker2{
+  display: block;
+  width: 50%;
+  float: left;
+
+}
+
+.trade-logo-container1{
+  display: block;
+  position: relative;
+  width: 36%;
+  top: 85px;
+}
+
+.trade-logo-container2{
+  display: block;
+  position: relative;
+  width: 36%;
+  bottom: 75px;
+}
+
+.tracker-logo, .tracker-logo2{
+  display: block;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+
+.tracker-info2{
+  display: block;
+  position: relative;
+  width: 60%;
+  left: 35%;
+  height: 162px;
+  top: 81px;
+}
+
+.tracker-info1{
+  display: block;
+  position: relative;
+  width: 60%;
+  left: 35%;
+  height: 162px;
+  bottom: 51px;
+}
+
+.tracker-team-name, .tracker-team-players{
+  display: block;
+  text-align: center;
+  height: 50%;
+  padding: 3px;
+  min-width: 100%;
+}
+
+.tracker-team-name{
+  padding-bottom: 3px;
+}

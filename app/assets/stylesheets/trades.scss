@@ -1,0 +1,188 @@
+.trade-screen-buttons{
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  align-content: center;
+  border-width: thin;
+  line-height: 65px;
+  vertical-align: middle;
+  background-color: black;
+  color: white;
+  float: left;
+  justify-content: space-around;
+}
+
+.team1-salary, .team2-salary{
+  display: block;
+  width: 35%;
+  text-align: center;
+}
+
+.trade-button{
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: 15%;
+}
+.trade-button:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+
+.trade-screen-container{
+  display: flex;
+  width: 100%;
+  float: left;
+}
+
+.trade-screen-team1-container{
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  padding-right: 5px;
+}
+
+.trade-screen-team1-name, .trade-screen-team2-name{
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.trade-player, .trade-player-header{
+  display: flex;
+  width: 100%;
+  float: left;
+  justify-content: space-between;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  border-top: solid black;
+  border-width: thin;
+}
+
+.trade-player:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+
+.trade-player-name{
+  display: block;
+  width: 31%;
+}
+
+.trade-screen-propose-container{
+  display: block;
+  width: 30%;
+  background-color: black;
+  color: white;
+  border-left: solid black;
+  border-right: solid black;
+  border-width: thin;
+}
+
+.team1-receive-header, .team2-receive-header{
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  height: 40px;
+  padding-top: 7px;
+}
+
+.trade-block-container{
+  display: flex;
+  float: left;
+  width: 100%;
+}
+
+.trade-block-header1, .trade-block-header2{
+  display: flex;
+  width: 100%;
+  float: left;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top: solid white;
+  border-width: thin;
+}
+
+.trade-block-headname{
+  display: block;
+  width: 65%;
+  text-align: center;
+}
+
+.trade-block-headsal{
+  display: block;
+  width: 35%;
+  text-align: center;
+}
+
+.trade-screen-team1, .trade-screen-team2{
+  display: block;
+  width: 50%;
+  min-height: 287px;
+}
+
+.trade-screen-team1{
+  border-right: solid white;
+  border-width: thin;
+}
+
+.trade-screen-team2-container{
+  display: block;
+  width: 35%;
+  flex-direction: column;
+  padding-right: 5px;
+}
+
+.trade-player-position{
+  display: block;
+  width: 9%;
+  text-align: center;
+}
+
+.trade-player-points, .trade-player-assists,
+.trade-player-rebounds, .trade-player-steals,
+.trade-player-plus{
+  display: block;
+  width: 9%;
+  text-align: center;
+}
+
+.trade-player-salary{
+  display: block;
+  width: 15%;
+  text-align: center;
+}
+
+.trade-block{
+  display: flex;
+  width: 100%;
+  float: left;
+  justify-content: space-between;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top: solid white;
+  border-width: thin;
+}
+
+.trade-block-name{
+  padding-left: 3px;
+}
+
+.trade-block-salary{
+  padding-right: 3px;
+}
+
+.trade-errors{
+  display: block;
+  color: red;
+  text-align: center;
+  height: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}

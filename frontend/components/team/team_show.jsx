@@ -41,14 +41,14 @@ class TeamShow extends React.Component {
   }
 
   render() {
-    console.log(this.props.players);
+    
     return (
       <div className="trade-container">
         <div className="trade-header">
-          <div className="trade-team">{this.props.team1Name}
+          <div className="trade-team1">{this.props.team1Name}
             {this.formatPlayers(1, this.props.team1Id)}
           </div>
-          <div className="trade-team">{this.props.team2Name}
+          <div className="trade-team2">{this.props.team2Name}
             {this.formatPlayers(2, this.props.team2Id)}
           </div>
         </div>

@@ -59,6 +59,8 @@ class Team extends React.Component {
     $("span.player-name").remove();
     $("span.player-position").remove();
 
+    document.getElementsByClassName('confirm-button-lock').className = "confirm-button";
+
     this.setState({
       team1Name: "Team 1",
       team2Name: "Team 2",
@@ -74,13 +76,15 @@ class Team extends React.Component {
     if(e.target.id === "one"){
       if(this.state.team1Name !== "Team 1"){
         this.setState({picked1: true, errors: ""});
+        e.target.className = "confirm-button-lock";
       } else {
-        this.setState({errors: "Invalid Team!"});
+        this.setState({errors: "Invalid Team One!"});
       }
     } else if(this.state.team2Name !== "Team 2"){
         this.setState({picked2: true, errors: ""});
+        e.target.className = "confirm-button-lock";
       } else {
-        this.setState({errors: "Invalid Team!"});
+        this.setState({errors: "Invalid Team Two!"});
       }
   }
 
@@ -88,7 +92,7 @@ class Team extends React.Component {
     const {teams, children} = this.props;
     let proposeTrade;
     if(this.state.picked1 && this.state.picked2){
-      proposeTrade = <Link to="/propose" className="propose-trade">Propose Trade</Link>;
+      proposeTrade = <Link to={`/propose/${this.state.team1Name}/${this.state.team1Id}/${this.state.team2Name}/${this.state.team2Id}`} className="propose-trade-lock">Propose Trade</Link>;
     } else {
       proposeTrade = <div onClick={this.handleProposeTrade} className="propose-trade">Propose Trade</div>;
     }

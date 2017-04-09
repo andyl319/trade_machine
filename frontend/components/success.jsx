@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 
-const App = ({ children }) => (
+const Success = ({ children }) => (
   <div>
     <div>
       <div className="header">
@@ -12,7 +12,7 @@ const App = ({ children }) => (
       </div>
       <div className="splash-container">
         <div className="splash">
-          SELECT TWO TEAMS TO MAKE A TRADE!
+          TRADE ACCEPTED!
         </div>
       </div>
     </div>
@@ -20,4 +20,4 @@ const App = ({ children }) => (
   </div>
 );
 
-export default App;
+export default Success;

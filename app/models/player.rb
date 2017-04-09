@@ -6,4 +6,8 @@ class Player < ActiveRecord::Base
     foreign_key: :team_id,
     class_name: 'Team'
 
+  def changeTeam(id)
+    self.team_id = id
+  end
+
 end
