@@ -132,7 +132,7 @@ class Trade extends React.Component {
             <span className="trade-player-rebounds">{player.rebounds}</span>
             <span className="trade-player-steals">{player.steals}</span>
             <span className="trade-player-plus">{player.plus}</span>
-            <span className="trade-player-salary">${player.salary/1000000}</span>
+            <span className="trade-player-salary">${(player.salary/1000000).toFixed(1)}</span>
           </span>
         );
       });
@@ -150,7 +150,7 @@ class Trade extends React.Component {
               <span className="trade-player-rebounds">{player.rebounds}</span>
               <span className="trade-player-steals">{player.steals}</span>
               <span className="trade-player-plus">{player.plus}</span>
-              <span className="trade-player-salary">${player.salary/1000000}</span>
+              <span className="trade-player-salary">${(player.salary/1000000).toFixed(1)}</span>
           </span>
         );
       });
@@ -170,7 +170,7 @@ class Trade extends React.Component {
         return (
           <span className="trade-block">
             <span className="trade-block-name">{player.name}</span>
-            <span className="trade-block-salary">${player.salary/1000000}</span>
+            <span className="trade-block-salary">${(player.salary/1000000).toFixed(1)}</span>
           </span>
         );
       });
@@ -182,7 +182,7 @@ class Trade extends React.Component {
         return (
           <span className="trade-block">
             <span className="trade-block-name">{player.name}</span>
-            <span className="trade-block-salary">${player.salary/1000000}</span>
+            <span className="trade-block-salary">${(player.salary/1000000).toFixed(1)}</span>
           </span>
         );
       });

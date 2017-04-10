@@ -21,6 +21,7 @@
   border-width: thin;
   color: white;
   text-decoration: none;
+  height: 200px;
 }
 
 .tracker-container:hover{
@@ -39,14 +40,14 @@
   display: block;
   position: relative;
   width: 36%;
-  top: 85px;
+  top: 35px;
 }
 
 .trade-logo-container2{
   display: block;
   position: relative;
   width: 36%;
-  bottom: 75px;
+  bottom: 125px;
 }
 
 .tracker-logo, .tracker-logo2{
@@ -62,7 +63,7 @@
   width: 60%;
   left: 35%;
   height: 162px;
-  top: 81px;
+  top: 31px;
 }
 
 .tracker-info1{
@@ -71,7 +72,7 @@
   width: 60%;
   left: 35%;
   height: 162px;
-  bottom: 51px;
+  bottom: 91px;
 }
 
 .tracker-team-name, .tracker-team-players{
@@ -84,4 +85,9 @@
 
 .tracker-team-name{
   padding-bottom: 3px;
+  font-size: 22px;
+}
+
+.tracker-team-players{
+  font-size: 14px;
 }
