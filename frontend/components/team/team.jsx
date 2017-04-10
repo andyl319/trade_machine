@@ -59,8 +59,6 @@ class Team extends React.Component {
     $("span.player-name").remove();
     $("span.player-position").remove();
 
-    document.getElementsByClassName('confirm-button-lock').className = "confirm-button";
-
     this.setState({
       team1Name: "Team 1",
       team2Name: "Team 2",
@@ -70,6 +68,13 @@ class Team extends React.Component {
       picked2: false,
       errors: ""
     });
+    
+    if(document.getElementsByClassName('confirm-button-lock')[0].className !== undefined){
+      document.getElementsByClassName('confirm-button-lock')[0].className = 'confirm-button';
+    }
+    if(document.getElementsByClassName('confirm-button-lock')[0].className !== undefined){
+      document.getElementsByClassName('confirm-button-lock')[0].className = 'confirm-button';
+    }
   }
   handleConfirm(e){
     e.preventDefault();

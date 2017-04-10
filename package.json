@@ -32,6 +32,6 @@
     "npm": "3.9.3"
   },
   "scripts": {
-    "postinstall": "webpack"
+    "postinstall": "./node_modules/.bin/webpack"
   }
 }
