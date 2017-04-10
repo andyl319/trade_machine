@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "== README",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "./node_modules/.bin/webpack"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andyl319/trade_machine.git"
@@ -35,6 +32,7 @@
     "npm": "3.9.3"
   },
   "scripts": {
-    "postinstall": "./node_modules/.bin/webpack"
+    "postinstall": "./node_modules/.bin/webpack",
+    "start": "node index.js"
   }
 }
