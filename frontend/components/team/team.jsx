@@ -68,7 +68,7 @@ class Team extends React.Component {
       picked2: false,
       errors: ""
     });
-    
+
     if(document.getElementsByClassName('confirm-button-lock')[0].className !== undefined){
       document.getElementsByClassName('confirm-button-lock')[0].className = 'confirm-button';
     }
@@ -113,9 +113,9 @@ class Team extends React.Component {
         <div className="team-show-container">
           <div className="trade-buttons">
             <div onClick={this.handleConfirm} id="one" className="confirm-button">Confirm Team 1</div>
-            <div onClick={this.handleReset} className="confirm-button">Reset</div>
-            {proposeTrade}
             <div onClick={this.handleConfirm} id="two" className="confirm-button">Confirm Team 2</div>
+            {proposeTrade}
+            <div onClick={this.handleReset} className="confirm-button">Reset</div>
           </div>
           <div className="errors">{this.state.errors}</div>
           <TeamShowContainer
