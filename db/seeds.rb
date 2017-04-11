@@ -985,7 +985,7 @@ pac7 = Player.create(
 )
 
 clips = Team.create(
-  name: "Los Angelos Clippers",
+  name: "Los Angeles Clippers",
   logo: "http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/lac.png"
 )
 clips1 = Player.create(
@@ -1067,7 +1067,7 @@ clips7 = Player.create(
 )
 
 lakers = Team.create(
-  name: "Los Angelos Lakers",
+  name: "Los Angeles Lakers",
   logo: "http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/lal.png"
 )
 lakers1 = Player.create(
