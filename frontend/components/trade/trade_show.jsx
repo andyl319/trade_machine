@@ -18,6 +18,7 @@ class TradeShow extends React.Component {
     if(this.props.trade.created_at === undefined){
       return;
     }
+    
     if(team === 1){
       formatPlayers = this.props.trade.trade_team_players.map(player => (
         <div className="trade-show-player">{player}</div>

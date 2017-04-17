@@ -7,7 +7,7 @@ const TradeReducer = (state = {}, action ) => {
   let newState;
   switch (action.type) {
     case RECEIVE_TRADE:
-      newState = merge({}, state, action.trade);
+      newState = merge({}, action.trade);
       return newState;
     default:
       return state;
