@@ -23,11 +23,15 @@
   position: relative;
   text-align: center;
   padding: 5px;
+  color: red;
+  border: solid red;
   border-radius: 5px;
+  border-width: thin;
   width: 15%;
 }
 .trade-button:hover{
-  background-color: gray;
+  border-color: green;
+  color: green;
   cursor: pointer;
 }
 
