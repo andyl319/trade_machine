@@ -16,7 +16,7 @@ Trade Machine will give a final report upon success of a trade.<br>
 ![success-screenshot](screenshots/success.png)
 
 Trade Machine contains a trade tracker to view a history of past trades.
-![tracker-screenshot](docs/screenshots/upvotes.png)
+![tracker-screenshot](docs/screenshots/tracker.png)
 
 
 ##Implementation
